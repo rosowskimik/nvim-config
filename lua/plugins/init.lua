@@ -9,33 +9,12 @@ return require("packer").startup({
       end,
     })
 
-    --use {
-    --  'ThePrimeagen/refactoring.nvim',
-    --  requires = {
-    --    {'nvim-lua/plenary.nvim'},
-    --    {'nvim-treesitter/nvim-treesitter'},
-    --  },
-    --  config = function()
-    --    require('plugins.refactoring')
-    --  end,
-    --}
-    --
-    -- use("tjdevries/cyclist.vim")
-
     use({
       "mhinz/vim-sayonara",
       config = function()
         require("plugins.sayonara")
       end,
     })
-
-    -- use({
-    -- 	"phaazon/hop.nvim",
-    -- 	branch = "v1",
-    -- 	config = function()
-    -- 		require("plugins.hop")
-    -- 	end,
-    -- })
 
     use("ggandor/lightspeed.nvim")
 
@@ -155,8 +134,6 @@ return require("packer").startup({
     use("antoinemadec/FixCursorHold.nvim")
 
     use("simrat39/rust-tools.nvim")
-
-    -- use("fatih/vim-go")
 
     use({
       "neovim/nvim-lspconfig",
